@@ -6,7 +6,7 @@
 
 Summary:       PHP accelerator, optimizer, encoder and dynamic content cacher
 Name:          %{name}
-Version:       3.1.0
+Version:       3.2.0
 Release:       1.ius%{?dist}
 License:       BSD
 Group:         Development/Languages
@@ -64,6 +64,9 @@ sed -i -e 's|/EXT_DIR|%{php_extdir}|g' $RPM_BUILD_ROOT%{_sysconfdir}/php.d/xcach
 %{php_extdir}/xcache.so
 
 %changelog
+* Fri Sep 19 2014 Ben Harper <ben.harper@rackspace.com> - 3.2.0-1.ius
+- Latest sources from upstream
+
 * Mon Oct 14 2013 Ben Harper <ben.harper@rackspace.com> - 3.1.0-1.ius
 - Latest sources from upstream
 
